@@ -1,0 +1,38 @@
+{
+    "name": "scavengerhunt",
+    "version": "1.0.0",
+    "description": "Tyler's Scavenger Hunt",
+    "type":"module",
+    "main": "server.js",
+    "scripts": {
+        "dev": "nodemon server.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Chrizxz/scavengerhunpnt.git"
+    },
+    "keywords": [
+        "website",
+        "tylerblanchard",
+        "scavengerhunt"
+    ],
+    "author": "ChrizxzFTW",
+    "license": "ISC",
+    "homepage": "https://github.com/Chrizxz/scavengerhunt#readme",
+    "dependencies": {
+        "colors": "^1.4.0",
+        "css-doodle": "^0.39.2",
+        "dotenv": "^16.0.3",
+        "ejs": "^3.1.8",
+        "esm": "^3.2.25",
+        "express": "^4.18.2",
+        "fs": "^0.0.1-security",
+        "mongoose": "^7.0.0",
+        "node-fetch": "^3.3.0",
+        "path": "^0.12.7",
+        "sass": "^1.77.6"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.21"
+    }
+}
