@@ -86,13 +86,12 @@
     right: 32vw;
 }
 
-.headTitle {
-    /* font-size: 3em; */
+/* .headTitle {
     color: #fff;
     text-shadow: 2px 2px 2px #000;
     margin-bottom: 1rem;
     z-index: 3;
-}
+} */
 
 .headPosParent {
     display: flex;

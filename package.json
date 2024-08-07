@@ -5,11 +5,15 @@
     "type":"module",
     "main": "server.js",
     "scripts": {
-        "dev": "nodemon server.js"
+        "scss_watch": "sass --watch public/scss:public/css",
+        "scss": "sass public/main.scss public/main.css",
+        "dev": "nodemon -e js,html,scss,mjs,json -x \"npm run scss\"",
+        "build": "npm i && npm run scss",
+        "start": "node server.js"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/Chrizxz/scavengerhunpnt.git"
+        "url": "git+https://github.com/Chrizxz/scavengerhunt.git"
     },
     "keywords": [
         "website",

@@ -1,0 +1,29 @@
+@mixin textShadow($color, $length) {
+    $value: ();
+    @for $i from 1 through $length {
+        $pxX: (0 - $i) + px;
+        $pxY: $i + px;
+        // $shadow: drop-shadow($pxX $pxY 0 $color);
+        // $value: append($value, $shadow);
+        $shadow: $pxX $pxY $color;
+        $value: append($value, $shadow, comma)
+    }
+    // filter: ($value);
+    text-shadow: $value;
+}
+
+.headTitle {
+    color: #fff;
+    margin-bottom: 1rem;
+    z-index: 3;
+    padding-left: 5rem;
+    font-size: 5rem;
+    line-height: 5rem;
+    position: relative;
+    @include textShadow(#bef810, 1000);
+}
+
+.poppins {
+    font-family: 'Poppins', sans-serif;
+}
+
